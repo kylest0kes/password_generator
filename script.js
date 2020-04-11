@@ -25,47 +25,23 @@ function writePassword() {
     }
     else {
       var specialCharacters = confirm("Click OK If You Would Like To Include Special Characters (!@#$%^&*(){}[]+<>/,.?)");
-        if (specialCharacters === true){
-          var specialInput = specialCharacters;
-        }
-        else{
-          var noSpecialInput = specialCharacters;
-        }
-
       var upperCharacters = confirm("Click OK If You Would Like Uppercase Characters");
-        if (upperCharacters === true){
-          var upperInput = upperCharacters;
-        }
-        else{
-          var noUpperInput = upperCharacters;
-        }
-      
       var lowerCharacters = confirm("Click OK If You Would Like Lowercase Characters");
-      if (lowerCharacters === true){
-        var lowerInput = lowerCharacters;
-      }
-      else{
-        var noLowerInput = lowerCharacters;
-      }
-      
       var numberCharacters = confirm("Click OK If You Would Like To Include Numbers");
-      if (numberCharacters === true){
-        var numberInput = numberCharacters;
-      }
-      else{
-        var noNumberInput = numberCharacters;
-      }
     }
   }
-  if(specialCharacters == false && upperCharacters == false && lowerCharacters == false && numberCharacters == false) {
+  if(specialCharacters === false && upperCharacters === false && lowerCharacters === false && numberCharacters === false) {
     alert("Please Select At Least One Characteristic")
+  }
+  else{
+    var password = generatePassword();
+    var passwordText = document.querySelector("#password");
+
+    passwordText.value = password;
   }
   
   
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
-
-  passwordText.value = password;
+  
 
 }
 
