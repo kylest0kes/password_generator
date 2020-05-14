@@ -6,4 +6,3 @@ In todays ever evolving digital world, a secure and random password is a staple 
 
 Introducing my Random Password Generator.  Just follow all prompts and instructions, and in seconds you will have a fully random password, by taking your choice of including random uppercase letters, lowercase letters, numbers, and symbols, randomly compiling them, and then displaying it to the screen for the user to take.
 
-MAJOR MAJOR KUDOS TO JAMIE FOR ALL HIS HELP!
